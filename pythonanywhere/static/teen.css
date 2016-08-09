@@ -1,0 +1,14 @@
+body {
+	background: url('teen-background.jpg') #fff center repeat;
+}
+
+.cell input {
+	background: #eee;
+}
+
+.cell input:focus {
+	background: #fff;
+}
+.cell input:disabled {
+	background: #ccc;
+}

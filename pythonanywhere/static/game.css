@@ -1,0 +1,50 @@
+.cell {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+}
+.cell input {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	width: 50px;
+	height: 50px;
+	background: #eef;
+	display: inherit;
+	border: solid thin;
+}
+.cell input[aria-invalid="true"] {
+	background: #f00 !important;
+	color: #fff !important;
+}
+.cell input:focus {
+	background: #ffe;
+}
+.cell input:disabled {
+	background: #ccc;
+}
+.cell:nth-child(3n+1) input {
+	border-left: solid medium;
+}
+.cell:nth-child(3n) input {
+	border-right: solid medium;
+}
+.row:nth-child(3n+1) input{
+	border-top: solid medium;
+}
+.row:nth-child(3n) input {
+	border-bottom: solid medium;
+}
+.grid {
+	width: 66%;
+	float: left;
+	display: table-cell;
+}
+.controls {
+	width: 34%;
+	display: table-cell;
+	background-color: #fff;
+}
+#error {
+	display: none;
+}
